@@ -1,0 +1,65 @@
+body{
+	margin:0;
+	padding:0;
+	font-family: 'Roboto Mono', monospace;
+	height:100vh;
+	display:flex;
+	align-items:center;
+	background-color: rgb(44,44,55);
+}
+
+.wrapper{
+	margin:0 auto;
+}
+
+.numbers{
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+}
+
+.colon{
+	font-size:85pt;
+	color: white;
+}
+
+.number{
+	width: 250px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.digit{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100px;
+}
+
+.line{
+	display: block;
+	background-color: rgba(90,225,255,0.1);
+}
+
+.line.active{
+	background-color: rgba(90,225,255,0.8);
+}
+
+.line-horizontal{
+	width: 100px;
+	height: 10px;
+}
+
+.line-vertical{
+	width: 10px;
+	height: 100px;
+}
+
+
+
+
+
+
+
+
+
