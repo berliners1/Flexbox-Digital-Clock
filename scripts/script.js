@@ -1,6 +1,16 @@
 /*-------------------*/
 /*Clock Functionality*/
 
+//Selectors
+let numSecond_DigitOne = document.querySelectorAll('.num-second .digit1 .line');
+let numSecond_DigitTwo = document.querySelectorAll('.num-second .digit2 .line');
+
+let numMinute_DigitOne = document.querySelectorAll('.num-minute .digit1 .line');
+let numMinute_DigitTwo = document.querySelectorAll('.num-minute .digit2 .line');
+
+let numHour_DigitOne = document.querySelectorAll('.num-hour .digit1 .line');
+let numHour_DigitTwo = document.querySelectorAll('.num-hour .digit2 .line');
+
 timer();
 setInterval(timer, 1000);
 
@@ -18,7 +28,7 @@ function timer(){
 	      minutesDbl = ("0" + minutes).slice(-2),
 	      hoursDbl   = ("0" + hours).slice(-2);
 
-	//Seperate the two digits into an array
+	//Seperate the two seconds digits into an array
 	const secondsOutput = [],
 	      stringNumber = secondsDbl.toString();
 
@@ -29,13 +39,5 @@ function timer(){
 	console.log(secondsOutput);
 	
 }
-
-
-
-
-
-
-
-
 
 
