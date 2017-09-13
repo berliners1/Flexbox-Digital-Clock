@@ -170,6 +170,9 @@ body{
 .inactive .line::after{
 	border-color: transparent;
 }
+.colon-second.inactive{
+	color: var(--blueNotActive);
+}
 
 
 

@@ -84,6 +84,7 @@ function timer(){
 
 //Selectors
 const toggle = document.getElementsByClassName('toggle-second')[0];
+var secondsColon = document.getElementsByClassName('colon-second')[0];
 
 //Switch display styles depending on if checkbox is checked.
 toggle.onclick = function(){
@@ -92,8 +93,10 @@ toggle.onclick = function(){
 	for(i = 0; i < 2; i++){
 		if (toggle.checked){
 			numSecondArray[i].classList.remove('inactive');
+			secondsColon.classList.remove('inactive');
 		} else {
 			numSecondArray[i].classList.add('inactive');
+			secondsColon.classList.add('inactive');
 		}
 	}
 }
