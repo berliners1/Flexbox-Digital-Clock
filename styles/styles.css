@@ -26,7 +26,7 @@ body{
 
 .colon{
 	font-size:85pt;
-	color: white;
+	color: var(--blueActive);
 }
 
 .number{
