@@ -58,27 +58,6 @@ body{
 	height: 100px;
 }
 
-.footer-wrapper{
-	display: flex;
-	justify-content: space-between;
-	color: white;
-	text-align: center;
-}
-.footer{
-	width: 250px;
-	margin-top: 10px;
-	
-}
-.footer_number1{
-	
-}
-.footer_number2{
-	
-}
-.footer_number3{
-	
-}
-
 
 /*Lighting up the correct lines to make the numbers.*/
 
@@ -172,6 +151,31 @@ body{
 }
 .colon-second.inactive{
 	color: var(--blueNotActive);
+}
+
+
+
+
+
+.footer-wrapper{
+	display: flex;
+	justify-content: space-between;
+	color: white;
+	text-align: center;
+}
+.footer{
+	width: 250px;
+	margin-top: 10px;
+	
+}
+.footer_number1{
+	
+}
+.footer_number2{
+	
+}
+.footer_number3{
+	
 }
 
 
