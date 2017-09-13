@@ -118,4 +118,5 @@ body{
 .num9 .line-bottom
 {
 	background-color: rgba(140,225,255,1);
+	box-shadow: 0px -2px 25px rgba(90,255,255,0.4);
 }
