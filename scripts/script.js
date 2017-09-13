@@ -79,6 +79,25 @@ function timer(){
 
 
 
+/*----------------------*/
+/*Toggle display seconds*/
+
+//Selectors
+const toggle = document.getElementsByClassName('toggle-second')[0];
+
+//Switch display styles depending on if checkbox is checked.
+toggle.onclick = function(){
+
+
+	for(i = 0; i < 2; i++){
+		if (toggle.checked){
+			numSecondArray[i].classList.remove('inactive');
+		} else {
+			numSecondArray[i].classList.add('inactive');
+		}
+	}
+}
+
 
 
 
