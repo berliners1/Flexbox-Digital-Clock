@@ -1,3 +1,9 @@
+:root{
+	--blueActive:  rgba(140,225,255,1);
+	--blueNotActive: rgba(90,225,255,0.025);
+	--blueBoxShadow: 0px -2px 25px rgba(90,255,255,0.4);
+}
+
 body{
 	margin:0;
 	padding:0;
@@ -38,7 +44,7 @@ body{
 
 .line{
 	display: block;
-	background-color: rgba(90,225,255,0.025);
+	background-color: var(--blueNotActive);
 }
 
 .line-horizontal{
@@ -117,8 +123,8 @@ body{
 .num9 .line-right-bottom,
 .num9 .line-bottom
 {
-	background-color: rgba(140,225,255,1);
-	box-shadow: 0px -2px 25px rgba(90,255,255,0.4);
+	background-color: var(--blueActive);
+	box-shadow: var(--blueBoxShadow);
 }
 
 
@@ -128,8 +134,8 @@ body{
 .num4 .line-right-bottom::after, .num4 .line-right-top::after,.num4 .line-left-top::after,
 .num7 .line-right-bottom::after, .num7 .line-right-top::after{
 	content: '';
-	border-top: 10px solid rgba(140,225,255,1);
-	border-bottom: 10px solid rgba(140,225,255,1);
+	border-top: 10px solid var(--blueActive);
+	border-bottom: 10px solid var(--blueActive);
 	margin-top: -10px;
 	height: 100%;
 	display: block;
