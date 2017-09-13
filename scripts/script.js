@@ -31,12 +31,20 @@ function timer(){
 	      minutesDbl = ("0" + minutes).slice(-2),
 	      hoursDbl   = ("0" + hours).slice(-2);
 
-	//Seperate the two digits into an array
+	//Seperate the two digits of each into an array
 	const secondsOutput = [],
-	      stringNumber = secondsDbl.toString();
+	      stringNumberSeconds = secondsDbl.toString();
 
-	for (let i = 0, len = stringNumber.length; i < len; i += 1){
-		secondsOutput.push(+stringNumber.charAt(i));
+	const minutesOutput = [],
+	      stringNumberMinutes = minutesDbl.toString();
+
+	const hoursOutput = [],
+	      stringNumberHours = hoursDbl.toString();
+
+	for (i = 0; i < 2; i++){
+		secondsOutput.push(+stringNumberSeconds.charAt(i));
+		minutesOutput.push(+stringNumberMinutes.charAt(i));
+		hoursOutput.push(+stringNumberHours.charAt(i));
 	}
 
 	console.log(secondsOutput);
