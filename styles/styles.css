@@ -38,7 +38,7 @@ body{
 
 .line{
 	display: block;
-	background-color: rgba(90,225,255,0.1);
+	background-color: rgba(90,225,255,0.025);
 }
 
 .line-horizontal{
