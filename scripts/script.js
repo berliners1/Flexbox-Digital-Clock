@@ -14,6 +14,10 @@ const numHour_Digit1 = document.querySelectorAll('.num-hour .digit1')[0];
 const numHour_Digit2 = document.querySelectorAll('.num-hour .digit2')[0];
 const numHourArray = [numHour_Digit1, numHour_Digit2];
 
+
+
+const toggleHour = document.getElementsByClassName('toggle-12-24')[0];
+
 timer();
 setInterval(timer, 1000);
 
@@ -26,12 +30,24 @@ function timer(){
 	      minutes = now.getMinutes(),
 	      hours = now.getHours();
 
-	const hours_12 = hours % 12 || 12; //Make hours 12 hour format
+	//Make hours either 12 or 24 hour format
+	let hours_12;
+	if(toggleHour.checked){
+		hours_12 = hours; //Make 24 hour format
+	} else {
+		hours_12 = hours % 12 || 12; //Make hours 12 hour format
+	}
+
+	//Run timer function again to refresh hour format immediately
+	toggleHour.onclick = function(){
+		timer();
+	}
+
 
 	//Make the values always double-digit
-	const secondsDbl = ("0" + seconds).slice(-2),
-	      minutesDbl = ("0" + minutes).slice(-2),
-	      hoursDbl   = ("0" + hours_12).slice(-2);
+	let secondsDbl = ("0" + seconds).slice(-2),
+	    minutesDbl = ("0" + minutes).slice(-2),
+	    hoursDbl   = ("0" + hours_12).slice(-2);
 
 	//Seperate the two digits of each into an array
 	const secondsOutput = [],
@@ -83,15 +99,15 @@ function timer(){
 /*Toggle display seconds*/
 
 //Selectors
-const toggle = document.getElementsByClassName('toggle-second')[0];
-var secondsColon = document.getElementsByClassName('colon-second')[0];
+const toggleSecond = document.getElementsByClassName('toggle-second')[0];
+const secondsColon = document.getElementsByClassName('colon-second')[0];
 
 //Switch display styles depending on if checkbox is checked.
-toggle.onclick = function(){
+toggleSecond.onclick = function(){
 
 
 	for(i = 0; i < 2; i++){
-		if (toggle.checked){
+		if (toggleSecond.checked){
 			numSecondArray[i].classList.remove('inactive');
 			secondsColon.classList.remove('inactive');
 		} else {
@@ -100,6 +116,11 @@ toggle.onclick = function(){
 		}
 	}
 }
+
+
+
+
+
 
 
 
