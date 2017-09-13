@@ -17,6 +17,7 @@ const numHourArray = [numHour_Digit1, numHour_Digit2];
 
 
 const toggleHour = document.getElementsByClassName('toggle-12-24')[0];
+const ampm = document.getElementsByClassName('ampm')[0];
 
 timer();
 setInterval(timer, 1000);
@@ -88,6 +89,14 @@ function timer(){
 			}
 		}
 
+	}
+
+
+	//Decide when AM or PM should display.
+	if(now.getHours() < 12){
+		ampm.innerHTML = "AM";
+	}else{
+		ampm.innerHTML = "PM";
 	}
 	
 }
