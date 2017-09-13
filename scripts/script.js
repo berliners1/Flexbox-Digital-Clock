@@ -26,10 +26,12 @@ function timer(){
 	      minutes = now.getMinutes(),
 	      hours = now.getHours();
 
+	const hours_12 = hours % 12 || 12; //Make hours 12 hour format
+
 	//Make the values always double-digit
 	const secondsDbl = ("0" + seconds).slice(-2),
 	      minutesDbl = ("0" + minutes).slice(-2),
-	      hoursDbl   = ("0" + hours).slice(-2);
+	      hoursDbl   = ("0" + hours_12).slice(-2);
 
 	//Seperate the two digits of each into an array
 	const secondsOutput = [],
