@@ -5,27 +5,24 @@
 }
 
 body{
-	margin:0;
-	padding:0;
+	margin: 0;
+	padding: 0;
 	font-family: 'Roboto Mono', monospace;
-	height:100vh;
-	display:flex;
-	align-items:center;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	background-color: rgb(44,44,55);
 }
 
-.wrapper{
-	margin:0 auto;
-}
-
 .numbers{
-	display:flex;
-	justify-content:space-around;
-	align-items:center;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
 
 .colon{
-	font-size:85pt;
+	font-size: 85pt;
 	color: var(--blueActive);
 }
 
@@ -224,6 +221,16 @@ input:checked + label:after {
 }
 
 
+
+
+/*AM PM*/
+.ampm-wrapper{
+	height: 300px;
+}
+.ampm{
+	color: var(--blueActive);
+	font-size: 50pt;
+}
 
 
 
