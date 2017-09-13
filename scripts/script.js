@@ -1,6 +1,19 @@
 /*-------------------*/
 /*Clock Functionality*/
 
+//Selectors
+const numSecond_Digit1 = document.querySelectorAll('.num-second .digit1')[0];
+const numSecond_Digit2 = document.querySelectorAll('.num-second .digit2')[0];
+const numSecondArray = [numSecond_Digit1, numSecond_Digit2];
+
+const numMinute_Digit1 = document.querySelectorAll('.num-minute .digit1')[0];
+const numMinute_Digit2 = document.querySelectorAll('.num-minute .digit2')[0];
+const numMinuteArray = [numMinute_Digit1, numMinute_Digit2];
+
+const numHour_Digit1 = document.querySelectorAll('.num-hour .digit1')[0];
+const numHour_Digit2 = document.querySelectorAll('.num-hour .digit2')[0];
+const numHourArray = [numHour_Digit1, numHour_Digit2];
+
 timer();
 setInterval(timer, 1000);
 
