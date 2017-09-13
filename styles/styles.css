@@ -47,6 +47,7 @@ body{
 	background-color: var(--blueNotActive);
 }
 
+
 .line-horizontal{
 	width: 100px;
 	height: 10px;
@@ -58,7 +59,6 @@ body{
 }
 
 .footer-wrapper{
-	
 	display: flex;
 	justify-content: space-between;
 	color: white;
@@ -161,6 +161,14 @@ body{
 	margin-top: -10px;
 	height: 100%;
 	display: block;
+}
+
+.inactive .line{
+	background-color: var(--blueNotActive);
+	box-shadow: none;
+}
+.inactive .line::after{
+	border-color: transparent;
 }
 
 
