@@ -47,7 +47,30 @@ function timer(){
 		hoursOutput.push(+stringNumberHours.charAt(i));
 	}
 
-	console.log(secondsOutput);
+	for(i = 0; i < 10; i++){
+
+		//I may find a better way to do this later, but this works for now.
+		for (j = 0; j < 2; j++){
+			if (secondsOutput[j] == i){
+				numSecondArray[j].classList.add('num'+i);
+			} else {
+				numSecondArray[j].classList.remove('num'+i);
+			}
+
+			if (minutesOutput[j] == i){
+				numMinuteArray[j].classList.add('num'+i);
+			} else {
+				numMinuteArray[j].classList.remove('num'+i);
+			}
+
+			if (hoursOutput[j] == i){
+				numHourArray[j].classList.add('num'+i);
+			} else {
+				numHourArray[j].classList.remove('num'+i);
+			}
+		}
+
+	}
 	
 }
 
