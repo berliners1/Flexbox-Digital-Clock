@@ -52,10 +52,70 @@ body{
 }
 
 
+/*Lighting up the correct lines to make the numbers.*/
 
+/*0*/
+.num0 .line-top, 
+.num0 .line-right-top, 
+.num0 .line-left-top, 
+.num0 .line-right-bottom, 
+.num0 .line-left-bottom, 
+.num0 .line-bottom,
 
+/*1*/
+.num1 .line-right-top, 
+.num1 .line-right-bottom,
 
+/*2*/
+.num2 .line-top, 
+.num2 .line-right-top, 
+.num2 .line-middle, 
+.num2 .line-left-bottom, 
+.num2 .line-bottom,
 
+/*3*/
+.num3 .line-top, 
+.num3 .line-right-top, 
+.num3 .line-middle, 
+.num3 .line-right-bottom, 
+.num3 .line-bottom,
 
+/*4*/
+.num4 .line-right-top,
+.num4 .line-middle,
+.num4 .line-left-top,
+.num4 .line-right-bottom,
 
+/*5*/ 
+.num5 .line-top, 
+.num5 .line-left-top, 
+.num5 .line-middle, 
+.num5 .line-right-bottom, 
+.num5 .line-bottom,
 
+/*6*/
+.num6 .line-top,
+.num6 .line-left-top,
+.num6 .line-middle,
+.num6 .line-left-bottom,
+.num6 .line-right-bottom,
+.num6 .line-bottom,
+
+/*7*/
+.num7 .line-top, 
+.num7 .line-right-top, 
+.num7 .line-right-bottom,
+
+/*8*/
+.num8 .line,
+
+/*9*/
+.num9 .line-top, 
+.num9 .line-left-top, 
+.num9 .line-middle,
+.num9 .line-right-top,
+.num9 .line-right-bottom,
+.num9 .line-bottom
+{
+	background-color: rgba(90,225,255,0.8);
+}
