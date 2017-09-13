@@ -166,7 +166,8 @@ body{
 .footer{
 	width: 250px;
 	margin-top: 10px;
-	
+	display: flex;
+	justify-content: space-around;
 }
 .footer_number1{
 	
@@ -185,6 +186,7 @@ input[type=checkbox] {
   height: 0;
   width: 0;
   visibility: hidden;
+  display: none;
 }
 
 label {
@@ -197,7 +199,6 @@ label {
   border: 2px solid white;
   border-radius: 100px;
   position: relative;
-  margin: 0 auto;
 }
 
 label:after {
