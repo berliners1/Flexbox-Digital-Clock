@@ -111,10 +111,7 @@ function timer(){
 const toggleSecond = document.getElementsByClassName('toggle-second')[0];
 const secondsColon = document.getElementsByClassName('colon-second')[0];
 
-//Switch display styles depending on if checkbox is checked.
-toggleSecond.onclick = function(){
-
-
+function secondsToggle(){
 	for(i = 0; i < 2; i++){
 		if (toggleSecond.checked){
 			numSecondArray[i].classList.remove('inactive');
@@ -124,16 +121,11 @@ toggleSecond.onclick = function(){
 			secondsColon.classList.add('inactive');
 		}
 	}
+};
+
+setTimeout(secondsToggle, 50);
+
+//Switch display styles depending on if checkbox is checked.
+toggleSecond.onclick = function(){
+	secondsToggle();
 }
-
-
-
-
-
-
-
-
-
-
-
-
